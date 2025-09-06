@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/SUDE/Desktop/MIS/work/BioViva/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

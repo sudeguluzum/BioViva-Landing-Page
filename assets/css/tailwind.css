@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+body {
+    font-family: 'Montserrat',sans-serif;
+  }
+.flex-center {
+    @apply flex items-center justify-center;
+}
+
+button {
+  cursor: pointer;
+}
+.text-pink {
+    @apply bg-gradient-to-r from-[#d9b9c5] to-[#C07996] bg-clip-text text-transparent ;
+}
+.c-black {
+    @apply bg-[#171717] ;
+}
+.l-pink {
+    @apply bg-[#FC9FB2] ;
+} 
+.d-pink {
+    @apply bg-[#C495A5] ;
+}
