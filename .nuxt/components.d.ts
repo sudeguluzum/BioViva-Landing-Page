@@ -14,10 +14,14 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 interface _GlobalComponents {
       'Accordion': typeof import("../components/Accordion.vue")['default']
     'BlurCard': typeof import("../components/BlurCard.vue")['default']
+    'Card': typeof import("../components/Card.vue")['default']
+    'CustomBtn': typeof import("../components/CustomBtn.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
     'Ping': typeof import("../components/Ping.vue")['default']
     'ScrollToTop': typeof import("../components/ScrollToTop.vue")['default']
+    'Text': typeof import("../components/Text.vue")['default']
+    'WhiteBtn': typeof import("../components/WhiteBtn.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -48,10 +52,14 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyAccordion': LazyComponent<typeof import("../components/Accordion.vue")['default']>
     'LazyBlurCard': LazyComponent<typeof import("../components/BlurCard.vue")['default']>
+    'LazyCard': LazyComponent<typeof import("../components/Card.vue")['default']>
+    'LazyCustomBtn': LazyComponent<typeof import("../components/CustomBtn.vue")['default']>
     'LazyFooter': LazyComponent<typeof import("../components/Footer.vue")['default']>
     'LazyHeader': LazyComponent<typeof import("../components/Header.vue")['default']>
     'LazyPing': LazyComponent<typeof import("../components/Ping.vue")['default']>
     'LazyScrollToTop': LazyComponent<typeof import("../components/ScrollToTop.vue")['default']>
+    'LazyText': LazyComponent<typeof import("../components/Text.vue")['default']>
+    'LazyWhiteBtn': LazyComponent<typeof import("../components/WhiteBtn.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
     'LazyNuxtErrorBoundary': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']>
@@ -88,10 +96,14 @@ declare module 'vue' {
 
 export const Accordion: typeof import("../components/Accordion.vue")['default']
 export const BlurCard: typeof import("../components/BlurCard.vue")['default']
+export const Card: typeof import("../components/Card.vue")['default']
+export const CustomBtn: typeof import("../components/CustomBtn.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
 export const Ping: typeof import("../components/Ping.vue")['default']
 export const ScrollToTop: typeof import("../components/ScrollToTop.vue")['default']
+export const Text: typeof import("../components/Text.vue")['default']
+export const WhiteBtn: typeof import("../components/WhiteBtn.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -122,10 +134,14 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyAccordion: LazyComponent<typeof import("../components/Accordion.vue")['default']>
 export const LazyBlurCard: LazyComponent<typeof import("../components/BlurCard.vue")['default']>
+export const LazyCard: LazyComponent<typeof import("../components/Card.vue")['default']>
+export const LazyCustomBtn: LazyComponent<typeof import("../components/CustomBtn.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../components/Header.vue")['default']>
 export const LazyPing: LazyComponent<typeof import("../components/Ping.vue")['default']>
 export const LazyScrollToTop: LazyComponent<typeof import("../components/ScrollToTop.vue")['default']>
+export const LazyText: LazyComponent<typeof import("../components/Text.vue")['default']>
+export const LazyWhiteBtn: LazyComponent<typeof import("../components/WhiteBtn.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']>

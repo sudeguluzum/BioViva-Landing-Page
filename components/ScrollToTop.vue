@@ -2,9 +2,9 @@
   <div
     v-show="isVisible"
     @click="scrollToTop"
-    class="fixed bottom-6 right-6 h-10 w-10 cursor-pointer rounded-full c-pink justify-center shadow-lg transition-opacity duration-300 z-50"
+    class="fixed bottom-6 l-pink right-6 h-10 w-10 flex-center rounded-full z-50 text-white text-2xl"
   >
-    <Icon name="fluent:caret-up-12-filled" />
+    <Icon name="line-md:arrow-up" />
   </div>
 </template>
 

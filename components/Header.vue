@@ -6,7 +6,7 @@
         <h1 class="font-semibold">BioViva</h1>
       </NuxtLink>
     </div>
-    <div class="pr-45">
+    <div class="pr-45 hidden md:block">
       <NuxtLink
         v-for="i in menu"
         :key="i.to"
@@ -26,7 +26,7 @@
         {{ i.name }}
       </NuxtLink>
     </div>
-    <div>
+    <div class="hidden md:block">
       <div class="flex items-center gap-3">
         <div class="border border-white flex gap-1 rounded-2xl p-1 text-white">
           <button
