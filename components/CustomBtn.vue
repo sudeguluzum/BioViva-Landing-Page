@@ -1,7 +1,7 @@
 <template>
   <NuxtLink class="flex" :to="to">
     <button
-      class="relative c-black text-white px-4 py-2 rounded-full hover:scale-102 hover:drop-shadow-2xl"
+      class="relative c-black text-nowrap text-white px-4 py-2 rounded-full hover:scale-102 hover:drop-shadow-2xl"
     >
       {{ label }}
       <div

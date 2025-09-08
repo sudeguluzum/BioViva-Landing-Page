@@ -15,6 +15,7 @@ interface _GlobalComponents {
       'Accordion': typeof import("../components/Accordion.vue")['default']
     'BlurCard': typeof import("../components/BlurCard.vue")['default']
     'Card': typeof import("../components/Card.vue")['default']
+    'Comment': typeof import("../components/Comment.vue")['default']
     'CustomBtn': typeof import("../components/CustomBtn.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
@@ -53,6 +54,7 @@ interface _GlobalComponents {
       'LazyAccordion': LazyComponent<typeof import("../components/Accordion.vue")['default']>
     'LazyBlurCard': LazyComponent<typeof import("../components/BlurCard.vue")['default']>
     'LazyCard': LazyComponent<typeof import("../components/Card.vue")['default']>
+    'LazyComment': LazyComponent<typeof import("../components/Comment.vue")['default']>
     'LazyCustomBtn': LazyComponent<typeof import("../components/CustomBtn.vue")['default']>
     'LazyFooter': LazyComponent<typeof import("../components/Footer.vue")['default']>
     'LazyHeader': LazyComponent<typeof import("../components/Header.vue")['default']>
@@ -97,6 +99,7 @@ declare module 'vue' {
 export const Accordion: typeof import("../components/Accordion.vue")['default']
 export const BlurCard: typeof import("../components/BlurCard.vue")['default']
 export const Card: typeof import("../components/Card.vue")['default']
+export const Comment: typeof import("../components/Comment.vue")['default']
 export const CustomBtn: typeof import("../components/CustomBtn.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
@@ -135,6 +138,7 @@ export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/
 export const LazyAccordion: LazyComponent<typeof import("../components/Accordion.vue")['default']>
 export const LazyBlurCard: LazyComponent<typeof import("../components/BlurCard.vue")['default']>
 export const LazyCard: LazyComponent<typeof import("../components/Card.vue")['default']>
+export const LazyComment: LazyComponent<typeof import("../components/Comment.vue")['default']>
 export const LazyCustomBtn: LazyComponent<typeof import("../components/CustomBtn.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../components/Header.vue")['default']>

@@ -13,6 +13,9 @@ button {
 .text-pink {
     @apply bg-gradient-to-r from-[#d9b9c5] to-[#C07996] bg-clip-text text-transparent ;
 }
+.pink-gradient {
+    @apply bg-gradient-to-br from-[#FECFCD] to-[#F5CDDB] ;
+}
 .c-black {
     @apply bg-[#171717] ;
 }

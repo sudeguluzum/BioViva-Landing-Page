@@ -33,7 +33,9 @@
       class="bg-[url(img1.png)] bg-center bg-cover py-20 md:pt-35 flex-center flex-wrap gap-10"
     >
       <div class="md:mr-80">
-        <Ping class="absolute -right-59" /><BlurCard class="relative w-60" />
+        <Ping class="absolute -right-70" /><BlurCard
+          class="relative max-w-70"
+        />
       </div>
       <div class="md:ml-80 md:mt-20">
         <Ping class="absolute right-2" />
@@ -73,10 +75,11 @@
       sub-text="Our commitment to healthcare development <br> empowers people."
     />
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-3 md:px-30">
-    <div class="col-span-2 px-5 bg-red-400">
+  <div class="grid grid-cols-1 lg:grid-cols-3 md:px-25">
+    <div class="col-span-2 px-5">
       <Swiper
         :slides-per-view="3"
+        :space-between="30"
         :pagination="{ clickable: true, el: '.custom-pagi' }"
         :modules="modules"
         :navigation="{ nextEl: '.swiper-next', prevEl: '.swiper-prev' }"
@@ -92,12 +95,24 @@
           },
         }"
       >
-        <swiper-slide v-for="i in slider" :key="j">
-          <Card
-            :img="i.img"
-            :title="i.title"
-            class="w-65 h-40 rounded-3xl overflow-hidden"
-          />
+        <swiper-slide
+          v-for="(i, j) in slider"
+          :key="j"
+          class="md:max-w-65 max-h-40 rounded-3xl overflow-hidden"
+        >
+          <Card :img="i.img" :title="i.title" />
+          <div class="absolute flex justify-between bottom-2 left-2 right-2">
+            <div
+              class="border border-white rounded-3xl bg-white/30 backdrop-blur-sm px-3 py-1"
+            >
+              {{ i.title }}
+            </div>
+            <div
+              class="border border-white rounded-full bg-white/30 backdrop-blur-sm w-8 h-8 flex-center"
+            >
+              <Icon name="ph:arrow-right-light" class="rotate-45 text-2xl" />
+            </div>
+          </div>
         </swiper-slide>
       </Swiper>
       <div class="flex items-center justify-between px-10 py-3">
@@ -134,9 +149,102 @@
       </div>
     </div>
   </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-10 md:p-25">
+    <div>
+      <Text
+        :parts="[
+          { type: 'pink', content: 'Innovative ' },
+          { type: 'text', content: 'solutions in  ' },
+          { type: 'br' },
+          { type: 'text', content: 'healthcare: ' },
+          { type: 'pink', content: 'Transforming lives' },
+        ]"
+        class="text-start"
+      />
+      <p class="py-3">
+        BioViva is an innovative platform that combines the power of
+        biotechnology and artificial intelligence to push the boundaries of
+        modern medicine. From bioprinting to nanotherapy, bioinformatics, and
+        cryonics, we aim to pioneer solutions that shape the future of human
+        health.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <WhiteBtn title="Advancements" />
+        <WhiteBtn title="Empowerment" />
+        <WhiteBtn title="Revolutionary" />
+        <WhiteBtn title="Breakthroughs" />
+        <WhiteBtn title="Wellness" />
+      </div>
+    </div>
+    <div class="flex flex-row justify-center items-end md:justify-end gap-1">
+      <NuxtImg
+        src="img6.png"
+        class="w-20 h-20 md:w-40 md:h-40 rounded-t-full rounded-bl-full flex items-end"
+      />
+      <NuxtImg src="img2.png" class="rounded-r-4xl rounded-t-4xl w-1/2" />
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-25">
+    <div
+      class="overflow-hidden rounded-4xl h-70 object-contain flex-center relative"
+    >
+      <NuxtImg src="img1.png" class="rounded-4xl" />
+      <NuxtLink
+        class="absolute bottom-0 right-0 flex-center bg-white gap-2 px-8 py-2 rounded-tl-full font-medium"
+      >
+        FAQ
+        <button
+          class="bg-white border border-black rounded-full p-1 flex-center hover:scale-102"
+        >
+          <Icon
+            name="ph:arrow-down-light"
+            class="-rotate-45 text-xl text-black"
+          />
+        </button>
+      </NuxtLink>
+    </div>
+    <div class="flex flex-col justify-center">
+      <Text
+        :parts="[
+          { type: 'pink', content: 'Innovations ' },
+          { type: 'text', content: 'are in the spotlight:  ' },
+          { type: 'br' },
+          { type: 'text', content: 'Discover breakthrough: ' },
+          { type: 'pink', content: 'solutions' },
+        ]"
+        class="text-start"
+      />
+      <p class="py-3">
+        From bioprinting and nanotherapy to advanced bioinformatics and
+        cryonics, our mission is to pioneer ideas that not only push scientific
+        boundaries but also create meaningful impact on human health and
+        longevity.
+      </p>
+      <CustomBtn label="Read more" class="flex justify-end pr-10" />
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-10 md:p-25">
+    <div class="col-span-1 flex flex-col justify-center gap-6">
+      <p>
+        BioViva is an innovative platform that combines the power of
+        biotechnology and artificial intelligence to push the boundaries of
+        modern medicine. From bioprinting to nanotherapy, bioinformatics, and
+        cryonics, we aim to pioneer solutions that shape the future of human
+        health.
+      </p>
+      <CustomBtn label="Make an appointment" />
+    </div>
+
+    <div
+      class="col-span-2 flex flex-row justify-center items-end md:justify-end gap-4"
+    >
+      <NuxtImg src="img3.png" class="w-20 h-20 md:w-40 md:h-40 rounded-4xl" />
+      <NuxtImg src="img7.png" class="rounded-4xl w-3/5 md:h-70 object-cover" />
+    </div>
+  </div>
   <Text
     :parts="[
-      { type: 'pink', content: 'Echoes' },
+      { type: 'pink', content: 'Echoes ' },
       { type: 'text', content: 'of excellence: ' },
       { type: 'img', content: 'img1.png' },
       { type: 'text', content: ' Inspiring chronicles of ' },
@@ -148,6 +256,18 @@
     ]"
     sub-text="Changing lives and shaping the future: Inspiring <br> excellence in biomedicine"
   />
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 md:p-25"
+  >
+    <Comment
+      v-for="(i, j) in cards"
+      :key="j"
+      :title="i.title"
+      :img="i.img"
+      :text="i.text"
+      :author="i.author"
+    />
+  </div>
 </template>
 
 <script setup>
@@ -159,12 +279,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 const modules = [Navigation, Autoplay, Pagination];
 
+const { cards } = mockData();
 const slider = [
   { img: "img7.png", title: "Consultations" },
   { img: "img4.png", title: "Diognostics" },
   { img: "img5.png", title: "Therapies" },
   { img: "img2.png", title: "Consultations" },
-  { img: "img2.png", title: "Consultations" },
+  { img: "img1.png", title: "Consultations" },
 ];
 </script>
 <style>
@@ -182,5 +303,9 @@ const slider = [
   opacity: 1 !important;
   background: #4c4c4c !important;
   width: 40px !important;
+}
+.swiper-prev.swiper-button-disabled,
+.swiper-next.swiper-button-disabled {
+  opacity: 0.5;
 }
 </style>

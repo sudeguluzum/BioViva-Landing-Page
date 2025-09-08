@@ -4,17 +4,17 @@
       @click="toggle(j)"
       v-for="(i, j) in list"
       :key="j"
-      class="flex flex-col l-pink h-60 border overflow-hidden text-white border-white rounded-3xl transition-all duration-500 hover:scale-101"
+      class="flex flex-col l-pink h-40 md:h-60 border overflow-hidden text-white border-white rounded-3xl transition-all duration-500 hover:scale-101"
     >
       <div
         v-show="isOpen !== j"
-        class="[writing-mode:vertical-lr] flex-center gap-5 p-3"
+        class="[writing-mode:vertical-lr] flex-center md:gap-5 p-1 md:p-3"
       >
         <Icon name="ph:arrow-up-light" class="text-3xl" />
         <h2>{{ i.title }}</h2>
       </div>
 
-      <div v-show="isOpen === j" class="w-60 h-60 relative">
+      <div v-show="isOpen === j" class="w-40 h-40 md:w-60 md:h-60 relative">
         <NuxtImg :src="i.img" class="w-full" />
         <div class="absolute flex justify-between bottom-2 left-2 right-2">
           <div
@@ -22,11 +22,12 @@
           >
             {{ i.title }}
           </div>
-          <div
-            class="border border-white rounded-full bg-white/30 backdrop-blur-sm w-8 h-8 flex-center"
+          <NuxtLink
+            to="#"
+            class="border border-white rounded-full bg-white/30 backdrop-blur-sm w-8 h-8 flex-center hover:scale-102"
           >
             <Icon name="ph:arrow-right-light" class="rotate-45 text-2xl" />
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@
 
 <script setup>
 defineProps({
-  title: { type: String },
   to: { type: String, default: "#" },
+  title: String,
 });
 </script>
