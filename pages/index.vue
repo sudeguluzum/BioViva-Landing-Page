@@ -1,6 +1,6 @@
 <template>
   <div class="w-full d-pink grid grid-cols-1 md:grid-cols-2">
-    <div class="bg-white md:rounded-r-3xl overflow-hidden pt-35 p-8">
+    <div class="bg-white md:rounded-r-3xl overflow-hidden pt-35 p-5 md:p-8">
       <div
         class="bg-[url(img5.png)] bg-center bg-cover w-35 py-6 rounded-full relative flex-center"
       >
@@ -129,7 +129,7 @@
         <div class="custom-pagi flex justify-end"></div>
       </div>
     </div>
-    <div class="col-span-1 px-8">
+    <div class="col-span-1 px-5">
       <p>
         Our team combines cutting-edge research with personalized care
         solutions. We focus on bridging medicine and technology to improve
@@ -143,13 +143,13 @@
           <WhiteBtn title="Bioinformatics" />
           <WhiteBtn title="Cryonics" />
         </div>
-        <div class="w-3xl">
+        <div class="w-4xl">
           <CustomBtn label="Contact Us" to="#" />
         </div>
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-10 md:p-25">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 md:p-25">
     <div>
       <Text
         :parts="[
@@ -184,13 +184,13 @@
       <NuxtImg src="img2.png" class="rounded-r-4xl rounded-t-4xl w-1/2" />
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-25">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-5 md:p-25">
     <div
       class="overflow-hidden rounded-4xl h-70 object-contain flex-center relative"
     >
       <NuxtImg src="img1.png" class="rounded-4xl" />
       <NuxtLink
-        class="absolute bottom-0 right-0 flex-center bg-white gap-2 px-8 py-2 rounded-tl-full font-medium"
+        class="absolute bottom-0 right-0 flex-center bg-white gap-2 px-5 py-2 rounded-tl-full font-medium"
       >
         FAQ
         <button
@@ -223,7 +223,7 @@
       <CustomBtn label="Read more" class="flex justify-end pr-10" />
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-10 md:p-25">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-5 md:p-25">
     <div class="col-span-1 flex flex-col justify-center gap-6">
       <p>
         BioViva is an innovative platform that combines the power of
@@ -257,7 +257,7 @@
     sub-text="Changing lives and shaping the future: Inspiring <br> excellence in biomedicine"
   />
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 md:p-25"
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-5 md:p-25"
   >
     <Comment
       v-for="(i, j) in cards"
