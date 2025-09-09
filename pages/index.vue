@@ -1,6 +1,8 @@
 <template>
   <div class="w-full d-pink grid grid-cols-1 md:grid-cols-2">
-    <div class="bg-white md:rounded-r-3xl overflow-hidden pt-35 p-5 md:p-8">
+    <div
+      class="bg-white dark:bg-gray-700 dark:text-white md:rounded-r-3xl overflow-hidden pt-35 px-5 md:px-8"
+    >
       <div
         class="bg-[url(img5.png)] bg-center bg-cover w-35 py-6 rounded-full relative flex-center"
       >
@@ -32,17 +34,17 @@
     <div
       class="bg-[url(img1.png)] bg-center bg-cover py-20 md:pt-35 flex-center flex-wrap gap-10"
     >
-      <div class="md:mr-80">
+      <div class="lg:mr-80">
         <Ping class="absolute -right-70" /><BlurCard
           class="relative max-w-70"
         />
       </div>
-      <div class="md:ml-80 md:mt-20">
+      <div class="lg:ml-80 lg:mt-20">
         <Ping class="absolute right-2" />
         <div
-          class="bg-gradient-to-b from-white/70 to-transparent rounded-4xl p-4 relative max-w-55"
+          class="bg-gradient-to-b from-white/70 to-transparent dark:from-gray-800/70 rounded-4xl p-4 relative max-w-55"
         >
-          <h1 class="text-gray-400 font-semibold">
+          <h1 class="text-gray-400 dark:text-white font-semibold">
             Health Revolution: BloViva
           </h1>
           <p class="text-xs text-white">
@@ -55,8 +57,10 @@
     </div>
   </div>
 
-  <div class="flex-center flex-col p-4 md:py-10">
-    <h2 class="text-gray-600 py-5">About us</h2>
+  <div
+    class="flex-center flex-col p-4 md:py-10 dark:text-white dark:bg-gray-700"
+  >
+    <h2 class="text-gray-600 py-5 dark:text-white">About us</h2>
     <Text
       :parts="[
         { type: 'text', content: 'At ' },
@@ -75,7 +79,7 @@
       sub-text="Our commitment to healthcare development <br> empowers people."
     />
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-3 md:px-25">
+  <div class="grid grid-cols-1 lg:grid-cols-3 md:px-25 dark:bg-gray-700">
     <div class="col-span-2 px-5">
       <Swiper
         :slides-per-view="3"
@@ -118,11 +122,19 @@
       <div class="flex items-center justify-between px-10 py-3">
         <div class="flex gap-2">
           <button class="swiper-prev text-gray-500 flex-center hover:scale-115">
-            <Icon name="lucide:move-left" size="24" class="text-[#4c4c4c]" />
+            <Icon
+              name="lucide:move-left"
+              size="24"
+              class="text-[#4c4c4c] dark:text-white"
+            />
           </button>
 
           <button class="swiper-next flex-center hover:scale-115">
-            <Icon name="lucide:move-right" size="24" class="text-[#4c4c4c]" />
+            <Icon
+              name="lucide:move-right"
+              size="24"
+              class="text-[#4c4c4c] dark:text-white"
+            />
           </button>
         </div>
 
@@ -130,7 +142,7 @@
       </div>
     </div>
     <div class="col-span-1 px-5">
-      <p>
+      <p class="dark:text-white">
         Our team combines cutting-edge research with personalized care
         solutions. We focus on bridging medicine and technology to improve
         well-being. Every project is designed to empower patients and advance
@@ -149,7 +161,9 @@
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 md:p-25">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 md:p-25 dark:bg-gray-700 dark:text-white"
+  >
     <div>
       <Text
         :parts="[
@@ -168,7 +182,7 @@
         cryonics, we aim to pioneer solutions that shape the future of human
         health.
       </p>
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3 dark:text-black">
         <WhiteBtn title="Advancements" />
         <WhiteBtn title="Empowerment" />
         <WhiteBtn title="Revolutionary" />
@@ -184,13 +198,15 @@
       <NuxtImg src="img2.png" class="rounded-r-4xl rounded-t-4xl w-1/2" />
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-5 md:p-25">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-10 p-5 md:p-25 dark:bg-gray-700 dark:text-white"
+  >
     <div
       class="overflow-hidden rounded-4xl h-70 object-contain flex-center relative"
     >
       <NuxtImg src="img1.png" class="rounded-4xl" />
       <NuxtLink
-        class="absolute bottom-0 right-0 flex-center bg-white gap-2 px-5 py-2 rounded-tl-full font-medium"
+        class="absolute bottom-0 right-0 flex-center bg-white gap-2 px-5 py-2 rounded-tl-full font-medium text-black"
       >
         FAQ
         <button
@@ -223,7 +239,9 @@
       <CustomBtn label="Read more" class="flex justify-end pr-10" />
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-5 md:p-25">
+  <div
+    class="grid grid-cols-1 md:grid-cols-3 gap-5 p-5 md:p-25 dark:bg-gray-700 dark:text-white"
+  >
     <div class="col-span-1 flex flex-col justify-center gap-6">
       <p>
         BioViva is an innovative platform that combines the power of
@@ -243,6 +261,7 @@
     </div>
   </div>
   <Text
+    class="dark:bg-gray-700 dark:text-white"
     :parts="[
       { type: 'pink', content: 'Echoes ' },
       { type: 'text', content: 'of excellence: ' },
@@ -257,7 +276,7 @@
     sub-text="Changing lives and shaping the future: Inspiring <br> excellence in biomedicine"
   />
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-5 md:p-25"
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-5 md:p-25 dark:bg-gray-700 dark:text-white"
   >
     <Comment
       v-for="(i, j) in cards"

@@ -17,8 +17,10 @@ interface _GlobalComponents {
     'Card': typeof import("../components/Card.vue")['default']
     'Comment': typeof import("../components/Comment.vue")['default']
     'CustomBtn': typeof import("../components/CustomBtn.vue")['default']
+    'DarkLightMode': typeof import("../components/DarkLightMode.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
+    'Language': typeof import("../components/Language.vue")['default']
     'Ping': typeof import("../components/Ping.vue")['default']
     'ScrollToTop': typeof import("../components/ScrollToTop.vue")['default']
     'Text': typeof import("../components/Text.vue")['default']
@@ -56,8 +58,10 @@ interface _GlobalComponents {
     'LazyCard': LazyComponent<typeof import("../components/Card.vue")['default']>
     'LazyComment': LazyComponent<typeof import("../components/Comment.vue")['default']>
     'LazyCustomBtn': LazyComponent<typeof import("../components/CustomBtn.vue")['default']>
+    'LazyDarkLightMode': LazyComponent<typeof import("../components/DarkLightMode.vue")['default']>
     'LazyFooter': LazyComponent<typeof import("../components/Footer.vue")['default']>
     'LazyHeader': LazyComponent<typeof import("../components/Header.vue")['default']>
+    'LazyLanguage': LazyComponent<typeof import("../components/Language.vue")['default']>
     'LazyPing': LazyComponent<typeof import("../components/Ping.vue")['default']>
     'LazyScrollToTop': LazyComponent<typeof import("../components/ScrollToTop.vue")['default']>
     'LazyText': LazyComponent<typeof import("../components/Text.vue")['default']>
@@ -101,8 +105,10 @@ export const BlurCard: typeof import("../components/BlurCard.vue")['default']
 export const Card: typeof import("../components/Card.vue")['default']
 export const Comment: typeof import("../components/Comment.vue")['default']
 export const CustomBtn: typeof import("../components/CustomBtn.vue")['default']
+export const DarkLightMode: typeof import("../components/DarkLightMode.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
+export const Language: typeof import("../components/Language.vue")['default']
 export const Ping: typeof import("../components/Ping.vue")['default']
 export const ScrollToTop: typeof import("../components/ScrollToTop.vue")['default']
 export const Text: typeof import("../components/Text.vue")['default']
@@ -140,8 +146,10 @@ export const LazyBlurCard: LazyComponent<typeof import("../components/BlurCard.v
 export const LazyCard: LazyComponent<typeof import("../components/Card.vue")['default']>
 export const LazyComment: LazyComponent<typeof import("../components/Comment.vue")['default']>
 export const LazyCustomBtn: LazyComponent<typeof import("../components/CustomBtn.vue")['default']>
+export const LazyDarkLightMode: LazyComponent<typeof import("../components/DarkLightMode.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../components/Header.vue")['default']>
+export const LazyLanguage: LazyComponent<typeof import("../components/Language.vue")['default']>
 export const LazyPing: LazyComponent<typeof import("../components/Ping.vue")['default']>
 export const LazyScrollToTop: LazyComponent<typeof import("../components/ScrollToTop.vue")['default']>
 export const LazyText: LazyComponent<typeof import("../components/Text.vue")['default']>

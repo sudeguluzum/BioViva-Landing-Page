@@ -4,7 +4,7 @@
       @click="toggle(j)"
       v-for="(i, j) in list"
       :key="j"
-      class="flex flex-col l-pink h-40 md:h-60 border overflow-hidden text-white border-white rounded-3xl transition-all duration-500 hover:scale-101"
+      class="flex flex-col l-pink h-40 md:h-60 border overflow-hidden text-white border-white dark:border-gray-700 rounded-3xl transition-all duration-500 hover:scale-101"
     >
       <div
         v-show="isOpen !== j"

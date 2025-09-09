@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-b from-white/70 to-transparent rounded-4xl pt-4 px-4"
+    class="bg-gradient-to-b from-white/70 to-transparent dark:from-gray-800/70 rounded-4xl pt-4 px-4"
   >
     <div class="custom-pagination flex"></div>
     <Swiper
