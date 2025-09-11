@@ -164,7 +164,7 @@
   <div
     class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 md:p-25 dark:bg-gray-700 dark:text-white"
   >
-    <div>
+    <div class="flex flex-col justify-center">
       <Text
         :parts="[
           { type: 'pink', content: 'Innovative ' },
@@ -201,10 +201,8 @@
   <div
     class="grid grid-cols-1 md:grid-cols-2 gap-10 p-5 md:p-25 dark:bg-gray-700 dark:text-white"
   >
-    <div
-      class="overflow-hidden rounded-4xl h-70 object-contain flex-center relative"
-    >
-      <NuxtImg src="img1.png" class="rounded-4xl" />
+    <div class="overflow-hidden rounded-4xl h-70 flex-center relative">
+      <NuxtImg src="img4.png" class="object-fill" />
       <NuxtLink
         class="absolute bottom-0 right-0 flex-center bg-white gap-2 px-5 py-2 rounded-tl-full font-medium text-black"
       >

@@ -41,6 +41,8 @@ interface _GlobalComponents {
     'Slide': typeof import("vue3-carousel/dist/carousel")['Slide']
     'Pagination': typeof import("vue3-carousel/dist/carousel")['Pagination']
     'Navigation': typeof import("vue3-carousel/dist/carousel")['Navigation']
+    'NuxtLinkLocale': typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/NuxtLinkLocale")['default']
+    'SwitchLocalePathLink': typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/SwitchLocalePathLink")['default']
     'NuxtPage': typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
     'NoScript': typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
     'Link': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
@@ -82,6 +84,8 @@ interface _GlobalComponents {
     'LazySlide': LazyComponent<typeof import("vue3-carousel/dist/carousel")['Slide']>
     'LazyPagination': LazyComponent<typeof import("vue3-carousel/dist/carousel")['Pagination']>
     'LazyNavigation': LazyComponent<typeof import("vue3-carousel/dist/carousel")['Navigation']>
+    'LazyNuxtLinkLocale': LazyComponent<typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/NuxtLinkLocale")['default']>
+    'LazySwitchLocalePathLink': LazyComponent<typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/SwitchLocalePathLink")['default']>
     'LazyNuxtPage': LazyComponent<typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']>
     'LazyNoScript': LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']>
     'LazyLink': LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']>
@@ -129,6 +133,8 @@ export const Carousel: typeof import("vue3-carousel/dist/carousel")['Carousel']
 export const Slide: typeof import("vue3-carousel/dist/carousel")['Slide']
 export const Pagination: typeof import("vue3-carousel/dist/carousel")['Pagination']
 export const Navigation: typeof import("vue3-carousel/dist/carousel")['Navigation']
+export const NuxtLinkLocale: typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/NuxtLinkLocale")['default']
+export const SwitchLocalePathLink: typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/SwitchLocalePathLink")['default']
 export const NuxtPage: typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
 export const NoScript: typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
 export const Link: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
@@ -170,6 +176,8 @@ export const LazyCarousel: LazyComponent<typeof import("vue3-carousel/dist/carou
 export const LazySlide: LazyComponent<typeof import("vue3-carousel/dist/carousel")['Slide']>
 export const LazyPagination: LazyComponent<typeof import("vue3-carousel/dist/carousel")['Pagination']>
 export const LazyNavigation: LazyComponent<typeof import("vue3-carousel/dist/carousel")['Navigation']>
+export const LazyNuxtLinkLocale: LazyComponent<typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/NuxtLinkLocale")['default']>
+export const LazySwitchLocalePathLink: LazyComponent<typeof import("../node_modules/@nuxtjs/i18n/dist/runtime/components/SwitchLocalePathLink")['default']>
 export const LazyNuxtPage: LazyComponent<typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']>
 export const LazyNoScript: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']>
 export const LazyLink: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']>

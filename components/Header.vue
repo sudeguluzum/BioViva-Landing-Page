@@ -25,16 +25,16 @@
             class="d-pink w-4 h-4"
           />
         </span>
-        {{ i.name }}
+        {{ $t(i.name) }}
       </NuxtLink>
     </div>
     <div class="hidden md:block">
       <div class="flex items-center gap-3">
-        <Language v-model="selectedPlan" />
+        <Language />
 
         <div>
           <NuxtLink to="#" class="bg-white py-2 px-4 rounded-2xl font-medium">
-            Login</NuxtLink
+            {{ $t("login") }}</NuxtLink
           >
         </div>
         <DarkLightMode v-model="selectedMode" />
@@ -61,7 +61,7 @@
       <!-- Menü -->
       <div class="flex flex-col items-center gap-4">
         <div class="flex-center gap-3">
-          <Language v-model="selectedPlan" />
+          <Language />
           <DarkLightMode v-model="selectedMode" />
         </div>
 
@@ -84,14 +84,14 @@
               class="d-pink w-4 h-4"
             />
           </span>
-          {{ i.name }}
+          {{ $t(i.name) }}
         </NuxtLink>
         <div>
           <NuxtLink
             to="#"
             class="bg-white border py-2 px-15 rounded-2xl font-medium text-center"
           >
-            Login</NuxtLink
+            {{ $t("login") }}</NuxtLink
           >
         </div>
       </div>
@@ -102,13 +102,12 @@
 <script setup>
 const route = useRoute();
 const menuIsOpen = ref(false);
-const selectedPlan = ref("en");
 const selectedMode = ref("light");
 
 const menu = [
-  { name: "Home", to: "/" },
-  { name: "About Us", to: "/about" },
-  { name: "Services", to: "#" },
-  { name: "Contact", to: "#" },
+  { name: "menu.home", to: "/" },
+  { name: "menu.about", to: "/#" },
+  { name: "menu.services", to: "#" },
+  { name: "menu.contact", to: "#" },
 ];
 </script>
